@@ -12,35 +12,31 @@
 
 body {
 	margin: auto;
+	background: #FFF;
 }
-.current-body {
-	background-color: #CCC;
-	margin: auto;
-}
-.main {
-	width: 70%;
-	margin: auto;
-	background: #ffffff;
-	box-shadow: 0 0 6px 1px #333;
-	-moz-box-shadow: 0 0 6px 1px #333;
-	-webkit-box-shadow: 0 0 6px 1px #333;
-	-o-box-shadow: 0 0 6px 1px #333;
-}
+
 header {
 	padding: 10px 10px 5px 0;
-	border-bottom: 3px solid #999;
-	margin-bottom: 20px;
+	background: #6699CC;
+	
 	height: 10%;
+	
 }
 footer {
 	padding: 10px 10px 20px 0;
-	border-top: 3px solid #999;
+	border-top: 3px solid #666;
 	height: 10%;
 }
 
 .content {
-	width: 95%;
+	width: 100%;
 	margin: auto;
+	box-shadow: inset 0 1px 3px 2px;
+	-moz-box-shadow: inset 0 1px 3px 2px;
+	-o-box-shadow: inset 0 1px 3px 2px;
+	-webkit-box-shadow:inset 0 1px 5px 0.8px black;
+	background:#FFF;
+	height: 700px;
 }
 .image-scroller {
 	width: 100%;
