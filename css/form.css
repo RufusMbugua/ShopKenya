@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * -----------------
+ * FORM CSS File
+ * -----------------
+ *
+ * Description -> Handles general form layout and interactivity
+ *
+ *
+ */
+
+/* Import: Font CSS
+ Contents:
+ Quicksand Font Family (and variants)
+ * */
+@import url('fonts.css');
+
+input[type=search] {
+	outline: none;
+	padding: 10px 15px 10px 15px;
+	border: 1px solid #999;
+	width: 30%;
+}
+input[type=search]:focus {
+	border: 1px solid #FFF333;
+	box-shadow: inset 0 1px 3px 0.5px;
+	-moz-box-shadow: inset 0 1px 3px 0.5px;
+	-o-box-shadow: inset 0 1px 3px 0.5px;
+	-webkit-box-shadow: inset 0 1px 3px 0.5px;
+}
+

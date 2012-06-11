@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+.post{
+	width:100%;
+	margin-top:20px;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+}
+
+.post-date{
+	
+	width:60px;
+	height:60px;
+	background:#C00;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+.post-date h1{
+	margin-top:0px;
+	text-align:center;
+	color:#FFF;
+	font-weight:bolder;
+	font-size:20px;
+	margin-bottom:5px;
+}
+
+.post-date h3{
+    margin-top:0px;
+	text-align:center;
+	color:#FFF;
+	font-weight:lighter;
+	font-style:italic;
+	font-size:15px;	
+}
+.post-title{
+	border-bottom: 2px groove;
+	height:40px;
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	border-top:inherit;
+	border-top-right-radius:inherit;
+	border-top-left-radius:inherit;
+	-moz-border-top-right-radius:inherit;
+	-webkit-border-top-left-radius:inherit;
+	-moz-border-top-right-radius:inherit;
+	-webkit-border-top-left-radius:inherit;
+	
+}
+.post-title h3, .post-footer h3{
+	margin-top:0px;
+	font-weight:normal;
+	font-size:18px;
+	padding-top:10px;
+	text-align:left;
+	margin-left:10px;
+	font: "Helvetica Nue", "Helvetica Nue", sans-serif;
+	text-shadow:4px;
+}
+.post-content{
+	background:#CCC;
+    border-bottom: 2px groove;
+}
+
+.post-footer{
+	height:80px;
+}
+
+.post-left{
+    left:-80px;
+    position:relative;
+	width:60px;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	margin-top:20px;
+}
+.post-share{
+	margin-top:10px;
+}

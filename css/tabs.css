@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tabs {	
+            height:900px;
+			width:100%;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            display: block;
+			margin-bottom:20px;
+			margin-top:10px;
+		 background:#inherit;
+		 
+		 	
+
+			
+        }
+        .tabs section {
+            float: left;
+            z-index: 1;
+        }
+        .tabs section h2 {
+		    font-size:18px;
+			padding: 5px 30px;
+			
+            margin-left: 30px;
+            font-family:"Times New Roman", Times, serif;
+            cursor: hand;
+            cursor: pointer;
+			text-align:center;
+			color:#000;	
+			
+			-webkit-transition-property:color, border-bottom; 
+    -webkit-transition-duration: 0.4s, 0.1s; 
+    -webkit-transition-timing-function: linear, ease-in;
+	
+	-moz-transition-property:color, border-bottom; 
+    -moz-transition-duration: 0.4s,0.1s; 
+    -moz-transition-timing-function: linear,  ease-in;
+	
+	-o-transition-property:color, border-bottom; 
+    -o-transition-duration: 0.4s, 0.1s; 
+    -o-transition-timing-function: linear,  ease-in;
+	
+	transition-property:color, border-bottom; 
+    transition-duration: 0.4s, 0.1s; 
+    transition-timing-function: linear, ease-in;		
+        }
+		
+		        .tabs section.ON h2 {
+		 	color:#039;
+	        border-bottom:solid 3px #039;		
+        }
+		
+.tabs section h2:hover{
+	color:#039;
+	        border-bottom:  ridge 1px #039;
+	
+}
+             .tabs section div {
+            position: absolute;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 0 10px;
+            font: 12px Arial;
+			margin-top:5px;
+			border-top:groove 1px;
+			
+			
+			
+        }
+
+        .tabs section.ON div { display: block; }
+		

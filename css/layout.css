@@ -1,0 +1,183 @@
+@charset "utf-8";
+/**
+ * ----------------------
+ * LAYOUT CSS FILE
+ * ---------------------
+ *
+ * Description -> Handles the look and feel of the front end views
+ *
+ *
+ * */
+@import url('fonts.css');
+
+body {
+	margin: auto;
+}
+.current-body {
+	background-color: #CCC;
+	margin: auto;
+}
+.main {
+	width: 70%;
+	margin: auto;
+	background: #ffffff;
+	box-shadow: 0 0 6px 1px #333;
+	-moz-box-shadow: 0 0 6px 1px #333;
+	-webkit-box-shadow: 0 0 6px 1px #333;
+	-o-box-shadow: 0 0 6px 1px #333;
+}
+header {
+	padding: 10px 10px 5px 0;
+	border-bottom: 3px solid #999;
+	margin-bottom: 20px;
+	height: 10%;
+}
+footer {
+	padding: 10px 10px 20px 0;
+	border-top: 3px solid #999;
+	height: 10%;
+}
+
+.content {
+	width: 95%;
+	margin: auto;
+}
+.image-scroller {
+	width: 100%;
+	margin-top: 5px;
+}
+.tile-area {
+	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.tile-area-x2 {
+	width: 65%;
+	display: inline-block;
+	height: 600px;
+	margin-left: 20px;
+	float: right;
+}
+.main-page-tiles {
+	display: inline-block;
+	margin: 0;
+	width: 30%;
+	height: 400px;
+	box-shadow: 0 0 6px 0.5px #333;
+	-moz-box-shadow: 0 0 6px 0.5px #333;
+	-webkit-box-shadow: 0 0 6px 0.5px #333;
+	-o-box-shadow: 0 0 6px 0.5px #333;
+}
+.article-tiles {
+	display: inline-block;
+	margin: 0;
+	width: 45%;
+	height: 150px;
+	border: 2px solid #999;
+}
+.tile-area-x2 .right-align {
+	width: 45%;
+	float: right;
+}
+.right-align {
+	float: right;
+	width: 30%;
+}
+.right-align .main-page-tiles, .right-align .article-tiles {
+	width: 100%;
+}
+.paginate {
+	margin-left: 35.2%;
+	width: 30%;
+	border: 2px solid #999;
+	margin-top: 20px;
+	height: 30px;
+	margin-bottom: 20px;
+}
+.sidebar {
+	display: inline-block;
+	margin: 0;
+	width: 30%;
+	height: 600px;
+	border: 2px solid #999;
+}
+.within {
+}
+.large-tile {
+	display: inline-block;
+	height: 600px;
+	width: 45%;
+	border: 2px solid #999;
+}
+.large-tile:last-child {
+	float: right;
+}
+nav {
+	width: 100%;
+}
+nav a {
+	font-size: 24px;
+	font-family: Quicksand;
+	text-decoration: none;
+	padding: 5px;
+	color: #000;
+	margin-right: 10px;
+	-webkit-transition-property: color, background, border-bottom;
+	-webkit-transition-duration: 0.75s, 1s, 0.25s;
+	-webkit-transition-timing-function: linear, ease-in, ease-in;
+	-moz-transition-property: color, background, border-bottom;
+	-moz-transition-duration: 0.75s, 1s, 0.25s;
+	-moz-transition-timing-function: linear, ease-in, ease-in;
+	-o-transition-property: color, background, border-bottom;
+	-o-transition-duration: 0.75s, 1s, 0.25s;
+	-o-transition-timing-function: linear, ease-in, ease-in;
+	transition-property: color, background, border-bottom;
+	transition-duration: 0.75s, 1s, 0.25s;
+	transition-timing-function: linear, ease-in, ease-in;
+}
+nav a:hover, a.current {
+	color: #039;
+	border-bottom: solid 3px #039;
+}
+ul, li {
+	list-style: none;
+	right: 0;
+	padding: 0 0 0 10px;
+}
+ul {
+	text-align: right;
+}
+ul li {
+	display: inline-block;
+	margin-right: .75em;
+}
+ul li.last {
+	margin-right: 0;
+}
+.main-page-tiles h2 {
+	text-align: center;
+	font-family: Tangerine Regular;
+	font-size: 40px;
+}
+
+#twitter_update_list {
+	font-size: 13px;
+	line-height: 21px;
+	list-style: none;
+}
+#twitter_update_list li {
+	background: url('images/twitter-divider.gif') bottom left repeat-x;
+	padding-bottom: 7px;
+	margin-bottom: 9px;
+}
+#twitter_update_list span, #twitter_update_list span a {
+	color: #ababab;
+	text-decoration: none;
+}
+#twitter_update_list a {
+	color: #6f7276;
+}
+
+#twitter_update_list ul li span a {
+	color: #6f7276;
+}

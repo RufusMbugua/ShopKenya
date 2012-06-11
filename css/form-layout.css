@@ -1,0 +1,128 @@
+@charset "utf-8";
+/**
+ * --------------------	
+ * FORM_-LAYOUT CSS
+ * --------------------
+ * 
+ * Description -> Handles the specific forms (inputable)
+ * 
+ * 
+ * 
+ * CSS Document */
+@import url('fonts.css');
+/* Columns*/
+.column, .column-wide {
+	position: relative;
+	padding: 0 20px 10px 10px;
+	display: inline-block;
+	float: left;
+	height: auto;
+	margin-bottom:5px;
+}
+.col{
+	width:33%;
+	display: inline-block;
+	
+}
+.block{
+	border-bottom:2px solid #999999;
+	margin-bottom:5px;
+}
+.block .column:first-child{
+	border-right:2px solid #999999;
+}
+.col-x4{
+	width:24%;
+}
+.column {
+	width: 45%;
+	
+}
+.column-wide {
+	width: 99%;
+	
+}
+.column input, .column-wide input {
+	display:table-row;
+}
+.column textarea {
+	display: block;
+	float: right;
+	width: 80%;
+	height: 120px;
+}
+
+.col p, .col label{
+	
+}
+.column-wide textarea {
+	height: 90px;
+	width:100%;
+}
+.column label, .column-wide label {
+	float: left;
+	display: block;
+	width:85%;
+}
+.row, .row2 {
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.row-title {
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:#999999 1px solid;
+}
+
+.left {
+	width: 40%;
+}
+.right {
+	width: 50%;
+	height: 100%;
+}
+.left-wide {
+	width: 45%;
+}
+.center-wide{
+	width:5%;
+}
+.right-wide {
+	width: 50%;	
+}
+.col-x7{
+	width:14%;
+}
+.left, .right, .center {
+	display: inline-block;
+	height: auto;
+
+}
+.column .center {
+	width: 10%;
+}
+
+.column-wide .center{
+width:20%;
+}
+.column-wide .left, .column-wide .right{
+width:30%;
+}
+
+.column label, .column-wide label {
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	
+	display:block;
+}
+.input[type=radio]{
+	display:inline-block;
+	width:10%;}

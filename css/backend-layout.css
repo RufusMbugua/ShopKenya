@@ -1,0 +1,142 @@
+@import url('fonts.css');
+
+/*
+ * -------------------------
+ * Back-end Layout CSS File
+ * -------------------------
+ * Description -> Handles the overall design/layout of the back-end views
+ *
+ *
+ */
+
+/**
+ * Main Body
+ */
+body {
+	margin: auto;
+	font-family: Timeless;
+}
+/**
+ * 	Container Section
+ * Description -> Parent Section that holds the following:
+ *                 1.Content
+ *                 2.Right Sidebar
+ *
+ */
+.container {
+	width: 100%;
+	height: 1000px;
+}
+
+/**
+ * 	Content Section
+ * Description -> Contains the bulk of the sections including:
+ *                1. Menu Main
+ *                2. Menu Secondary
+ */
+.content {
+	width: 70%;
+	display: inline-block;
+}
+.right-sidebar {
+	width: 20%;
+	height: 400px;
+	display: inline-block;
+	margin-left: 50px;
+	position: absolute;
+}
+.center {
+	display: inline-block;
+	position: absolute;
+	width: 45%;
+	padding: 30px 30px 30px 30px;
+	border: 2px solid black;
+	margin-left: 30px;
+}
+header {
+	-webkit-box-shadow: inset 0.4px -2px 5px 0.2px #000;
+	-moz-box-shadow: inset 0.4px -2px 5px 0.2px #000;
+	box-shadow: inset 0.4px -2px 5px 0.2px #000;
+}
+header, footer {
+	width: 100%;
+	height: 100px;
+	background-color: #CCC;
+}
+footer {
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear: both;
+	-webkit-box-shadow: inset 0.4px 2px 5px 0.2px #000;
+	-moz-box-shadow: inset 0.4px 2px 5px 0.2px #000;
+	box-shadow: inset 0.4px 2px 5px 0.2px #000;
+}
+
+nav {
+	margin: auto;
+	width: 100%;
+	background: url('images/nav.jpg');
+	background-size: 100%;
+	padding: 10px 0 10px 0;
+	margin-bottom: 30px;
+	position: relative;
+	border-bottom: 1px solid #999;
+	height: 35px;
+}
+nav a {
+	padding: 10px 20px 20px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-family: Timeless Bold;
+	font-size: 20px;
+}
+.initial {
+	text-shadow: 1px 0px 0.5px #999;
+	filter: dropshadow(color=#7a737a, offx=0.4, offy=0);
+	margin-top: 20px;
+	float: left;
+	font-family: QuickSand Bold;
+	font-size: 50px;
+	padding-right: 20px;
+	padding-left: 10px;
+	color: #FFF;
+}
+.title {
+	text-shadow: 1px 0px 0.5px #999;
+	filter: dropshadow(color=#7a737a, offx=0.3, offy=0);
+	margin-top: 30px;
+	font-family: QuickSand Bold;
+	font-size: 30px;
+	float: left;
+}
+
+.user {
+	padding: 10px 30px 10px 30px;
+	-webkit-box-shadow: inset 0.4px 0px 5px 0.2px #000;
+	-moz-box-shadow: inset 0.4px 0px 5px 0.2px #000;
+	box-shadow: inset 0.4px 0px 5px 0.2px #000;
+}
+
+.search {
+	right: 10px;
+	width: 15%;
+	display: inline-block;
+	position: absolute;
+}
+input[type=search] {
+	border: 5px solid black;
+	padding: 5px 10px 5px 10px;
+	font-family: Quicksand;
+	outline: none;
+	border: 1px solid #CCC;
+	width: 100%;
+	border-radius: 15px;
+}
+input[type=search]:focus {
+	-webkit-box-shadow: inset 0.4px 0px 5px 0.2px #000;
+	-moz-box-shadow: inset 0.4px 0px 5px 0.2px #000;
+	box-shadow: inset 0.4px 0px 5px 0.2px #000;
+}
+

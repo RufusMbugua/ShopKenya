@@ -1,0 +1,123 @@
+@charset "utf-8";
+/** 
+ * ------------------ 
+ * Fonts CSS File
+ * ------------------
+ * Description -> Handles all custom fonts
+ * 
+ *  Created by: Rufus N Mbugua
+ *  2012
+ *   
+ * /
+
+/* 
+ * Quicksand Font Family 
+ */
+ 
+
+/* Weight => Normal
+ Style => None
+ * */
+@font-face {
+	font-family: Quicksand;
+	src: url("fonts/Quicksand_Book.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Weight => Bold
+ Style => None
+ * */
+@font-face {
+	font-family: Quicksand Bold;
+	src: url("fonts/Quicksand_Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Weight => Lighter
+ Style => None
+ * */
+@font-face {
+	font-family: Quicksand Light;
+	src: url("fonts/Quicksand_Light.otf");
+	font-weight: lighter;
+}
+
+/* Weight => Lighter
+ Style => Oblique
+ * */
+@font-face {
+	font-family: Quicksand Light Oblique;
+	src: url("fonts/Quicksand_Light_Oblique.otf");
+	font-weight: lighter;
+	font-style: oblique;
+}
+
+/* Weight => Normal
+ Style => Oblique
+ * */
+@font-face {
+	font-family: Quicksand Oblique;
+	src: url("fonts/Quicksand_Book_Oblique.otf");
+	font-weight: normal;
+	font-style: oblique;
+}
+
+/* Weight => Bold
+ Style => Oblique
+ * */
+@font-face {
+	font-family: Quicksand Bold Oblique;
+	src: url("fonts/Quicksand_Book_Oblique.otf");
+	font-weight: normal;
+	font-style: oblique;
+}
+
+/* Weight => Normal
+ Style => Dashed
+ * */
+@font-face {
+	font-family: Quicksand Dashed;
+	src: url("fonts/Quicksand_Book_Oblique.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Timeless Font Family*/
+/* Weight => Normal
+ * Style => Normal */
+@font-face {
+	font-family: Timeless;
+	src: url("fonts/Timeless.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+/* Weight => Bold
+ * Style => Normal */
+@font-face {
+	font-family: Timeless Bold;
+	src: url("fonts/Timeless-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ContenG;
+	src: url("fonts/ContenG.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Tangerine Bold;
+	src: url("fonts/Tangerine_Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: Tangerine Regular;
+	src: url("fonts/Tangerine_Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,25 @@
+body {
+
+}
+
+.cake-image{
+	height: 40%;
+	border:1px solid black;
+	display: block;
+}
+.cake-title {
+	height: 10%;
+	font-family:Quicksand ;
+	text-align:center;
+	font-size:200%;
+	display: block;
+}
+.cake-description {
+	height: 30%;
+	display: block;
+}
+.cake-footer {
+	height: 20%;
+	display: block;
+	border:1px solid black;
+}
