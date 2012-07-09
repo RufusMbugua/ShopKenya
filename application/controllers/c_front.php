@@ -1,7 +1,7 @@
 <?php
 
 class C_Front extends CI_Controller {
-
+    var $data;
 	public function _construct() {
 
 		parent::_construct();
@@ -11,37 +11,27 @@ class C_Front extends CI_Controller {
 
 	public function index() {
 		$data['title'] = 'Welcome';
-		$data['content'] = "<p>Cakes Delights</p>";
+		$data['content'] = "<p>Shop Kenya</p>";
 		$this -> load -> view('index', $data);
 	}//End of index file
 	
-	public function cakes(){
-		$data['title'] = 'Cakes';
-		$data['content'] = "<p>Cakes Delights</p>";
-		$this -> load -> view('cakes', $data);
-	}
 	
-	public function articles(){
-		$data['title'] = 'Articles';
-		$data['content'] = "<p>Cakes Delights</p>";
-		$this -> load -> view('articles', $data);
+	public function getCategories(){
+	$this->load->model('models_shopkenya/M_Category');
+	$this->M_Category->getAllCategories();
+	$this->data['categories']=$this->M_Category->categories;
+    }
+	
+	public function getStores(){
+	$this->load->model('models_shopkenya/M_Store');
+	$this->M_Store->getAllStoresDetails();
+	$this->data['stores']=$this->M_Store->stores;
+    }
+	
+	public function getBranchesByStore(){
+	$this->load->model('models_shopkenya/M_Branch');
+	$this->M_Branch->getBranchByStoreName('Naivas'); /*pass the client side/sesison variable of the store name*/
+	$this->data['branches']=$this->M_Branch->branches;
+    }
+	
 	}
-public function moreinfo(){
-		$data['title'] = 'More Info.';
-		$data['content'] = "<p>Cakes Delights</p>";
-		$this -> load -> view('more_info', $data);
-	}
-public function getCakes(){
-	$this->load->model('models_cakesDelights/M_Cakes');
-	$this->M_Cakes->getCakesInformation();
-}
-public function getArticles(){
-	$this->load->model('models_cakesDelights/M_Articles');
-	$this->M_Articles->getArticlesInformation();
-}
-public function getArticlesFront(){
-	$this->load->model('models_cakesDelights/M_ArticlesFront');
-	$this->M_ArticlesFront->getArticlesFrontInformation();
-}
-}
-?>
