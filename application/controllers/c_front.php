@@ -30,7 +30,7 @@ class C_Front extends CI_Controller {
 	
 	public function getBranchesByStore(){
 	$this->load->model('models_shopkenya/M_Branch');
-	$this->M_Branch->getBranchByStoreName('Naivas'); /*pass the client side/sesison variable of the store name*/
+	$this->M_Branch->getBranchByStoreName('Naivas'); /*pass the client side/session variable of the store name*/
 	$this->data['branches']=$this->M_Branch->branches;
     }
 	
