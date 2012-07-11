@@ -23,9 +23,9 @@
 					var keyA = $(a).text();
 					var keyB = $(b).text();
 
-					if(keyA < keyB)
+					if (keyA < keyB)
 						return -1;
-					if(keyA > keyB)
+					if (keyA > keyB)
 						return 1;
 					return 0;
 				});
@@ -34,7 +34,6 @@
 					ul.append(li);
 				});
 
-				
 			});
 
 		</script>
@@ -44,11 +43,21 @@
 	<body>
 
 		<header>
+			<section class="logo">
+				ShopKenya
+			</section>
 			<section class="search">
+				<form>
+					<select>
+						<option>All</option>
+						<option>Some</option>
+					</select>
 				<input type="search" placeholder="Search Here" />
+				<button>Search</button>
+				</form>
 			</section>
 		</header>
-
+<section class="document">
 		<section class="left-sidebar">
 			<ul class="alphaList">
 				<div class="top-menu">
@@ -98,7 +107,31 @@
 			</ul>
 		</section>
 		<section class="content">
-
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+<section class="result"></section>
+		</section>
 		</section>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
 

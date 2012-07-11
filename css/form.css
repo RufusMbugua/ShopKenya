@@ -17,9 +17,9 @@
 @import url('fonts.css');
 
 input[type=search] {
-	padding: 10px 15px 10px 15px;
+	padding: 0.625em 0.625em 0.625em 0.625em;
 	
-	width: 100%;
+	width: 50%%;
 }
 input[type=search]:focus {
 	-webkit-box-shadow: inset 0px 3px 6px -3px #000;
@@ -27,8 +27,23 @@ input[type=search]:focus {
 	box-shadow: inset 0px 3px 6px -3px #000;
 }
 .search{
-	float:right;
-	padding:10px 5px 5px 10px;
+	margin:auto;
+	/*padding:0.625em 0.312em 0.312em 0.625em;*/
+	width:60%;
+	height:2em;
+}
+.search select{
+	float:left;
+	padding: 0.625em 0.625em 0.625em 0.625em;
 	width:20%;
+	margin-right:5px;
+}
+.search select option{
+	width:200%;
+}
+.search button{
+	padding: 0.625em 0.625em 0.625em 0.625em;
+	float:right;
+	width:25%;
 }
 

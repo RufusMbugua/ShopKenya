@@ -12,15 +12,27 @@
 
 body {
 	margin: auto;
-	background: #FFF;
+	background: url('../images/background.jpg');
 }
 
 header {
-	padding: 10px 10px 5px 0;
+	padding: 0.938em 0.365em 0.938em 0;
 	background: #6699CC;
-	
-	height: 10%;
-	
+	font-size: 100%;
+	height: 1.875em;
+	-webkit-box-shadow: 0 2px 6px 0.2px #333;
+	margin-bottom: 10px;
+}
+.logo {
+	float: left;
+	font-size: 2em;
+	color: #fff;
+	text-shadow: 0px 1px 2px #000;
+	filter: dropshadow(color=#000, offx=0, offy=1);
+	padding-left:10px;
+}
+.document {
+	padding: 0 2% 0 2%;
 }
 footer {
 	padding: 10px 10px 20px 0;
@@ -28,45 +40,51 @@ footer {
 	height: 10%;
 }
 
-.left-sidebar{
-	width:18%;
-	display:inline-block;
-	height: 700px;
+.left-sidebar {
+	width: 15%;
+	display: inline-block;
+	padding: 1% 1% 1% 1%;
 }
-.menu{
-	width:100%;
+.menu {
+	width: 100%;
 }
-.left-sidebar a{
-	padding:5px 15px 10px 15px;
-	font-family:Quicksand Bold;
-	font-size:16px;
-	background-color: #99CCFF;
-	display:inline-block;
-	width:150px;
-	margin-bottom:2px;
-	cursor:pointer;
-	margin-right:15px;
-	transition:margin-right 0.1s linear 0.3s;
-	-moz-transition:margin-right 0.1s linear 0.3s;
-	
+.left-sidebar li, .left-sidebar ul {
+	width: 90%;
+	margin: auto;
 }
-.left-sidebar a:hover{
+.left-sidebar a {
+	padding-bottom: 10px;
+	padding-top:10px;
+	padding-left:10px;
+	font-family: Quicksand Bold;
+	font-size: 120%;
+	border-bottom: 1px solid #999;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	transition: margin-right 0.1s linear 0.3s;
+	-moz-transition: margin-right 0.1s linear 0.3s;
+}
+
+.left-sidebar, .content {
+	border: 2px solid #999;
+	border-radius: 3px;
+	background: #FFF;
+	height: 80%;
+	overflow: auto;
+}
+.left-sidebar a:hover {
 	background-color: #3366CC;
-	cursor:hand;
-	margin-right:0;
+	cursor: hand;
+	margin-right: 0;
 }
 .content {
 	width: 80%;
 	margin: auto;
-	float:right;
-	display:inline-block;
-	box-shadow: inset 0 1px 3px 2px;
-	-moz-box-shadow: inset 0 1px 3px 2px;
-	-o-box-shadow: inset 0 1px 3px 2px;
-	-webkit-box-shadow:inset 0 1px 5px 0.8px black;
+	float: right;
+	display: inline-block;
 	
-	background:#FFF;
-	height: 700px;
+	
 }
 .image-scroller {
 	width: 100%;
@@ -134,7 +152,7 @@ nav {
 	width: 100%;
 }
 nav a {
-	font-size: 24px;
+	font-size: 100%;
 	font-family: Quicksand;
 	text-decoration: none;
 	padding: 5px;
@@ -160,10 +178,9 @@ nav a:hover, a.current {
 ul, li {
 	list-style: none;
 	right: 0;
-	padding: 0 0 0 10px;
 }
 ul {
-	text-align: right;
+	-webkit-padding-start: 0;
 }
 ul li {
 	display: inline-block;
@@ -178,24 +195,15 @@ ul li.last {
 	font-size: 40px;
 }
 
-#twitter_update_list {
-	font-size: 13px;
-	line-height: 21px;
-	list-style: none;
+.menu-bar {
+	font-size: 100%;
+	height: 2em;
 }
-#twitter_update_list li {
-	background: url('images/twitter-divider.gif') bottom left repeat-x;
-	padding-bottom: 7px;
-	margin-bottom: 9px;
-}
-#twitter_update_list span, #twitter_update_list span a {
-	color: #ababab;
-	text-decoration: none;
-}
-#twitter_update_list a {
-	color: #6f7276;
-}
-
-#twitter_update_list ul li span a {
-	color: #6f7276;
+.result{
+	width:90%;
+	margin:auto;
+	height:40px;
+	border-bottom:1px solid #999;
+	padding:10px 20px 10px 20px;
+	-webkit-box-shadow:0 10px 5px -10px #555;
 }
