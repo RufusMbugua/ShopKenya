@@ -34,4 +34,10 @@ class C_Front extends CI_Controller {
 	$this->data['branches']=$this->M_Branch->branches;
     }
 	
+	public function getProductsByStore(){
+	$this->load->model('models_shopkenya/M_Product');
+	$this->M_Product->getProductsByStoreName('Naivas'); /*pass the client side/session variable of the store name*/
+	$this->data['products']=$this->M_Product->products;
+    }
+	
 	}

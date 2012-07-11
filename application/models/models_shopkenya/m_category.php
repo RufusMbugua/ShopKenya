@@ -14,6 +14,7 @@ class M_Category  extends MY_Model {
 	      $query = $this->em->createQuery('SELECT c.categoryID,c.categoryName FROM models\entities\E_Category c');
           
           $this->categories = $query->getResult();
+		  //if(!$this->categories->isEmpty());
 		  /*start of test display--to be deleted*/
 		  foreach ($this->categories as $key=>$value) {
 									print $value['categoryName'].'<br />';

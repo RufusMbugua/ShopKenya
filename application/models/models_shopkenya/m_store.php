@@ -14,7 +14,9 @@ class M_Store  extends MY_Model {
 	      $query = $this->em->createQuery('SELECT s.storeId,s.storeName,s.productLine FROM models\entities\E_Store s');
           
           $this->stores = $query->getResult();
+		  //if(!$this->stores->isEmpty());
 		  /*start of test display--to be deleted*/
+		   
 		  foreach ($this->stores as $key=>$value) {
 									print $value['storeName'].' || '.$value['productLine'].'<br />';
 									//var_dump($this->stores);

@@ -14,7 +14,9 @@ class M_Branch extends MY_Model {
 	      $query = $this->em->createQuery('SELECT b FROM models\entities\E_Branch b WHERE b.storeName= :name');
 		  $query->setParameter('name',$store);
           
+		
           $this->branches = $query->getResult();
+		    //if(!$this->branches->isEmpty());
 		  /*start of test display--to be deleted*/
 		  foreach ($this->branches as $key=>$value) {
 									//print $value['branchAlias'].' || '.$value['branchLocation'].' || '.$value['branchManager'].'<br />';
