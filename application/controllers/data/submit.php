@@ -1,4 +1,5 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 #processes all the form data before sending to the database for storage or update
 class Submit extends CI_Controller
 {
