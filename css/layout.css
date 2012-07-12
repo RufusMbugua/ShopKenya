@@ -29,7 +29,7 @@ header {
 	color: #fff;
 	text-shadow: 0px 1px 2px #000;
 	filter: dropshadow(color=#000, offx=0, offy=1);
-	padding-left:10px;
+	padding-left: 10px;
 }
 .document {
 	padding: 0 2% 0 2%;
@@ -54,8 +54,8 @@ footer {
 }
 .left-sidebar a {
 	padding-bottom: 10px;
-	padding-top:10px;
-	padding-left:10px;
+	padding-top: 10px;
+	padding-left: 10px;
 	font-family: Quicksand Bold;
 	font-size: 120%;
 	border-bottom: 1px solid #999;
@@ -83,8 +83,6 @@ footer {
 	margin: auto;
 	float: right;
 	display: inline-block;
-	
-	
 }
 .image-scroller {
 	width: 100%;
@@ -199,11 +197,20 @@ ul li.last {
 	font-size: 100%;
 	height: 2em;
 }
-.result{
-	width:90%;
-	margin:auto;
-	height:40px;
-	border-bottom:1px solid #999;
-	padding:10px 20px 10px 20px;
-	-webkit-box-shadow:0 10px 5px -10px #555;
+.result {
+	width: 90%;
+	margin: auto;
+	height:15%;
+	border-bottom: 1px solid #999;
+	padding: 10px 20px 10px 20px;
+	-webkit-box-shadow: 0 10px 5px -10px #555;
+}
+.result-title {
+	font-size: 1.2em;
+}
+.result-content {
+
+}
+.result-tags {
+	float: right;
 }

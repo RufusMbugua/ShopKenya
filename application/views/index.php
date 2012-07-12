@@ -107,7 +107,20 @@
 			</ul>
 		</section>
 		<section class="content">
-<section class="result"></section>
+<section class="result">
+	<section class="result-title">
+		Item 1
+	</section>
+	<section class="result-content">
+		Description
+	</section>
+	<section class="result-price">
+		Price
+	</section>
+	<section class="result-tags">
+		tags 
+	</section>
+</section>
 <section class="result"></section>
 <section class="result"></section>
 <section class="result"></section>
