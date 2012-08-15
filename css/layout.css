@@ -197,13 +197,18 @@ ul li.last {
 	font-size: 100%;
 	height: 2em;
 }
-.result {
+.result, .loading {
 	width: 90%;
 	margin: auto;
 	height:15%;
 	border-bottom: 1px solid #999;
 	padding: 10px 20px 10px 20px;
 	-webkit-box-shadow: 0 10px 5px -10px #555;
+}
+
+.loading{
+	background:#000;
+    color:white;
 }
 .result-title {
 	font-size: 1.2em;

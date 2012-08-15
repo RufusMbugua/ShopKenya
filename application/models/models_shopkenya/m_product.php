@@ -7,23 +7,34 @@ if (!defined('BASEPATH'))
 use application\models\entities\E_Product;
 
 class M_Product extends MY_Model {
-	var $products;
-	function getProductsByStoreName($store){     
+	var $products,$myProducts=array();
+	function getProductsByStoreName($store){
+		 
+		 
 	      /*using DQL*/
-	      
+	      try{
 	      $query = $this->em->createQuery('SELECT p FROM models\entities\E_Product p WHERE p.storeName= :name');
 		  $query->setParameter('name',$store);
           
-          $this->products = $query->getResult();
+          $this->products = $query->getArrayResult();
+		  $this->products=array('rCount'=>count($this->products),'products'=>$this->products);
 		  // if(!$this->products->isEmpty());
-		  /*start of test display--to be deleted*/
+		  
+		  //json format
+		  print json_encode($this->products);
 		 
-		  foreach ($this->products as $key=>$value) {
-									
-									var_dump($this->products);
-									//print $key." ".$value['branchAlias'];
-								  }
+		 
+		  /*start of test display--to be deleted*/
+		 /* foreach ($this->products as $key => $value) {	
+				#create custom array that is json friendly
+				$this->myProducts[$key]=$this->products[$key];
+				}*/
 		  /*end of test display--to be deleted*/
+		  }catch(exception $ex){
+		  	//ignore
+		  	//die($ex->message());
+		  }
+		 
 		   return $this->products;
 		   
 	}/*close getProductsByStoreName($store)*/
