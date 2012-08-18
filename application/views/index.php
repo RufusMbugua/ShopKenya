@@ -64,7 +64,7 @@
 				     
 				     
 				     
-				     $(".content").append("<section class='result'><section class=result-image></section><section class='result-details'><section class='result-title'><a href='#'>"+name+"</a></section><section class='result-content'>"+description+"</section><section class='result-price'>Ksh. "+price+"</section>"+styledTags+"</section></section>");
+				     $(".content").append("<section class='result'><section class=result-image></section><section class='result-details'><section class='result-title'><a href='#'>"+name+"</a></section><section class='result-content'>"+description+"</section><section class='result-price'>Ksh. "+price+"</section><section class='awesome red medium'>Buy</section>"+styledTags+"</section></section>");
 				    });
 				    
 				    // once we've loaded

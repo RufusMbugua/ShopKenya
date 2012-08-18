@@ -236,8 +236,7 @@ ul li.last {
 }
 .result-price{
 	width:10%;
-	border-bottom:1px solid red;
-	padding:0.2em;
+	
 }
 .result-tags {
 	float: right;
