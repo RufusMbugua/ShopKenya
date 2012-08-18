@@ -13,13 +13,10 @@
 
 		<!-- Attach JavaScript files -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
-<<<<<<< HEAD
-       <script type="text/javascript" src="<?php echo base_url(); ?>js/menuloader.js" charset="utf-8"></script>
 
-=======
 		<script src="<?php echo base_url()?>js/jquery-1.7.2.min.js"></script>
 		
->>>>>>> abc0d309250042dea58bddad89585f3544d20afd
+
 
 		<script>
 			$().ready(function() {
@@ -39,11 +36,7 @@
 				$.each(items, function(i, li) {
 					ul.append(li);
 				});
-<<<<<<< HEAD
 
-				$('.mini-menu').hide();
-
-=======
 				
 			
 				
@@ -100,7 +93,7 @@
 					    } 
 					   }); 
              }); 
->>>>>>> abc0d309250042dea58bddad89585f3544d20afd
+
 			});
 
 		</script>
@@ -125,67 +118,7 @@
 				</form>
 			</section>
 		</header>
-<<<<<<< HEAD
-<section class="document">
-		<section class="left-sidebar">
-			
-			<ul class="alphaList">
-				<a class="awesome blue large shopping" style="width:20%" style="display:none" >Back</a>
-				<div class="top-menu">
-					<li>
-						<a class="anchor shopping">Shopping</a>
-						
-							
-							   <li class="mini-menu shopping" style="display:none" >Nakumatt</li>
-							   <li class="mini-menu shopping" style="display:none" >Uchumi</li>
-							   <li class="mini-menu shopping" style="display:none" >Naivas</li>
-						   
-					 
-					</li>
-					<li>
-						<a class="anchor">Travelling</a>
-					</li>
-					<li>
-						<a class="anchor" >Advertising</a>
-					</li>
-					<li>
-						<a class="anchor" >Communication</a>
-					</li>
-					<li>
-						<a class="anchor" >Banking</a>
-					</li>
-					<li>
-						<a class="anchor" >Entertainment</a>
-					</li>
-					<li>
-						<a class="anchor" >Security Firms</a>
-					</li>
-					<li>
-						<a class="anchor" >Housing</a>
-					</li>
-					<li>
-						<a class="anchor" >Transport</a>
-					</li>
-					<li>
-						<a class="anchor" >Hotels</a>
-					</li>
-					<li>
-						<a class="anchor" >Restaurants</a>
-					</li>
-					<li>
-						<a class="anchor">Couriers</a>
-					</li>
-					<li>
-						<a class="anchor" >Hire</a>
-					</li>
-					
-				</div>
-			</ul>
-		</section>
-		<section class="content">
-<section class="result">
-	<section class="result-title">
-=======
+
 	<section class="document">
 			<section class="left-sidebar">
 				<ul class="alphaList">
@@ -239,7 +172,7 @@
 	
 	<!--section class="result"><!--begin of class result-->
 	<!--section class="result-title">
->>>>>>> abc0d309250042dea58bddad89585f3544d20afd
+
 		Item 1
 	</section>
 	<section class="result-content">
