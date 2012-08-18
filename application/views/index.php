@@ -14,6 +14,8 @@
 		<!-- Attach JavaScript files -->
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.7.2.min.js" charset="utf-8"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+       <script type="text/javascript" src="<?php echo base_url(); ?>js/menuloader.js" charset="utf-8"></script>
+
 
 		<script>
 			$().ready(function() {
@@ -33,6 +35,8 @@
 				$.each(items, function(i, li) {
 					ul.append(li);
 				});
+
+				$('.mini-menu').hide();
 
 			});
 
@@ -59,50 +63,57 @@
 		</header>
 <section class="document">
 		<section class="left-sidebar">
+			
 			<ul class="alphaList">
+				<a class="awesome blue large shopping" style="width:20%" style="display:none" >Back</a>
 				<div class="top-menu">
 					<li>
-						<a>Shopping</a>
+						<a class="anchor shopping">Shopping</a>
+						
+							
+							   <li class="mini-menu shopping" style="display:none" >Nakumatt</li>
+							   <li class="mini-menu shopping" style="display:none" >Uchumi</li>
+							   <li class="mini-menu shopping" style="display:none" >Naivas</li>
+						   
+					 
 					</li>
 					<li>
-						<a>Travelling</a>
+						<a class="anchor">Travelling</a>
 					</li>
 					<li>
-						<a>Advertising</a>
+						<a class="anchor" >Advertising</a>
 					</li>
 					<li>
-						<a>Communication</a>
+						<a class="anchor" >Communication</a>
 					</li>
 					<li>
-						<a>Banking</a>
+						<a class="anchor" >Banking</a>
 					</li>
 					<li>
-						<a>Entertainment</a>
+						<a class="anchor" >Entertainment</a>
 					</li>
 					<li>
-						<a>Security Firms</a>
+						<a class="anchor" >Security Firms</a>
 					</li>
 					<li>
-						<a>Housing</a>
+						<a class="anchor" >Housing</a>
 					</li>
 					<li>
-						<a>Transport</a>
+						<a class="anchor" >Transport</a>
 					</li>
 					<li>
-						<a>Hotels</a>
+						<a class="anchor" >Hotels</a>
 					</li>
 					<li>
-						<a>Restaurants</a>
+						<a class="anchor" >Restaurants</a>
 					</li>
 					<li>
-						<a>Couriers</a>
+						<a class="anchor">Couriers</a>
 					</li>
 					<li>
-						<a>Hire</a>
+						<a class="anchor" >Hire</a>
 					</li>
-					<li>
-						<a>C</a>
-					</li>
+					
 				</div>
 			</ul>
 		</section>
