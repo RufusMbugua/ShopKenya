@@ -52,8 +52,19 @@
 				     var description = product.productDescription;
 				     var price= product.productPrice;
 				     var tags=product.productTags;
+				     //Split the tags
+				     var splitTags = tags.split(",");
+				     var styledTags="";
 				     
-				     $(".content").append("<section class='result'><section class='result-title'>"+name+"</section><section class='result-content'>"+description+"</section><section class='result-price'>Ksh. "+price+"</section><section class='result-tags'>"+tags+"</section></section>");
+				     $.each(splitTags, function(i, tag){
+				     	styledTags+="<section class='result-tags awesome blue medium' style='margin-right:1%;'>"+tag+"</section>";
+				    });
+				    
+				     	
+				     
+				     
+				     
+				     $(".content").append("<section class='result'><section class=result-image></section><section class='result-details'><section class='result-title'><a href='#'>"+name+"</a></section><section class='result-content'>"+description+"</section><section class='result-price'>Ksh. "+price+"</section>"+styledTags+"</section></section>");
 				    });
 				    
 				    // once we've loaded
@@ -93,7 +104,14 @@
 					    } 
 					   }); 
              }); 
-
+             
+             $('.shopping').click(function() {
+							$('.alphalist a').hide();
+							$('.shopping').show();
+							$('.shopping-menu').show();
+							
+						});
+			
 			});
 
 		</script>
@@ -124,7 +142,16 @@
 				<ul class="alphaList">
 					<div class="top-menu">
 						<li>
-							<a>Shopping</a>
+							<a class="shopping">Shopping</a>
+							<div class="shopping-menu" style="display:none">
+
+								<p>Nakumatt</p>
+
+								<p>Naivas</a>
+
+							</div>
+							
+							<ul
 						</li>
 						<li>
 							<a>Travelling</a>
